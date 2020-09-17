@@ -1,11 +1,10 @@
-{% load static%}
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -15,10 +14,13 @@
 <body>
 
 <div class="jumbotron personal">
-    <h1 class="display-4">{% block maintitle %}{% endblock %}</h1>
+    <a class=" display-2 my-4 " href="{% url 'home' %}"><span class="text-center">BlogApp</span></a>
     <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
         featured content or information.</p>
     <hr class="my-4">
+    <div class="d-flex flex-row-reverse justify-content-left">
+        <a class="btn btn-outline-primary btn-lg my-4 " href="{% url 'post_new' %}"><span class="text-center">New Blog Post +</span></a>
+    </div>
 </div>
 {% block content %}
 {% endblock %}

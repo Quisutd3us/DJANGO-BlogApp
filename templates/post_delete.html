@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Blog Posts Delete{% endblock %}
+{% block maintitle %}Delete Post{% endblock %}
+{% block content %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container post-entry">
+            <div class="d-flex justify-content-left my-4">
+                <form action="" method="post">{% csrf_token %}
+
+                    <p>Are you sure you want delete {{ post.title }}?</p>
+
+                    <button type="submit" class="btn btn-danger">Confirm</button>
+                    <a class="btn btn-info" href="{% url 'home'%}"><span
+                            class="text-center">Cancel</span></a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

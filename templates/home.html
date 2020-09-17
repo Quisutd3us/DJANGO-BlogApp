@@ -6,7 +6,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container post-entry">
             {% for post in object_list %}
-                <h1 class="display-1">{{ post.title }}</h1>
+                <h1 class="display-5">{{ post.title }}</h1>
                 <p class="lead">{{ post.body }}</p>
                 <div class="d-flex justify-content-center">
                     <a class="btn btn-outline-primary btn-lg my-4 " href="{% url 'post_detail' post.pk %}"><span class="text-center">Ver Post</span></a>
