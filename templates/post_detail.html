@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block maintitle %}{{ post.id }}{% endblock %}
+{% block content %}
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-1">{{ post.title }}</h1>
+        <p class="lead">{{ post.body }}</p>
+    </div>
+{% endblock %}

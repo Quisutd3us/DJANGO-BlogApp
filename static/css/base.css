@@ -1,0 +1,9 @@
+.personal {
+    margin: 2rem 2rem;
+}
+.jumbotron h1,p{
+    text-align: center;
+}
+body{
+    background-color: lightskyblue;
+}
