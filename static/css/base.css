@@ -1,5 +1,6 @@
 .personal {
-    margin: 2rem 2rem;
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
 }
 .jumbotron h1,p{
     text-align: center;
